@@ -6,16 +6,51 @@
         <link rel="stylesheet" href="home.css">
     </head>
     <body>
-        <a href="home.html">Home</a>
-        <a href="about.html" alt="home.html">About Me</a>
-        <a href="projects.html" alt="home.html">Projects</a>
-        <a href="https://www.linkedin.com/in/ryan-man/" target="_blank">
-            <img src="Images/linkedin.ico" width="32px" height="32px"></a>
-        <a href="https://github.com/Raiun" target="_blank">
-            <img src="Images/github.ico" width="32px" height="32px"></a>
+        <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="projects.html" alt="home.html">Projects</a>
+                <a href="https://www.linkedin.com/in/ryan-man/" target="_blank">
+                    <img src="Images/linkedin.ico" width="32px" height="32px"></a>
+                <a href="https://github.com/Raiun" target="_blank">
+                    <img src="Images/github.ico" width="32px" height="32px"></a>
+            </nav>
+        </header>
+
         <div>
-            <h1>Resume</h1>
-            <img src="Resume.jpg" alt="Resume" width="750px" height="1000px"
+            <button class="tabLink" onclick="displayTab('resume')">Resume</button>
+            <button class="tabLink" onclick="displayTab('experience')">Work Experience</button>
+            <button class="tabLink" onclick="displayTab('projects')">Projects</button>
         </div>
+        
+        <!--Tab Content-->
+        <div class="tabContent" id="resume" style="display: none;">
+            <h2>Resume</h2>
+            <img src="Resume.jpg" alt="Resume" width="750px" height="1000px">
+        </div>
+
+        <div class="tabContent" id="experience" style="display: none;">
+            <h2>Work Experience</h2>
+        </div>
+
+        <div class="tabContent" id="projects" style="display: none;">
+            <h2>Projects</h2>
+        </div>
+
+        <footer>Contact Me</footer>
+        
+        <script>
+            function displayTab(tabName) {
+                let prevContent, i;
+
+                //Issue Hiding Other Content
+                prevContent = document.getElementsByClassName("tabContent");
+                for (i = 0; i < prevContent.length; i++) {
+                    prevContent[i].style.display = "none";
+                }
+                
+                document.getElementById(tabName).style.display = "block";
+            } 
+        </script>
     </body>
 </html>
