@@ -31,23 +31,32 @@
         <div class="tabContent" id="experience" style="display: none;">
             <h2>Work Experience</h2>
             <div>
-                <img src="Images/pullscription.png" alt="Pullscription" width="300px" height="200px" style="float:left; margin-left: 35%; margin-right: 20px; margin-bottom: 30px;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 30px;">
+                <img src="Images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
                     <p>Software Engineering Intern<br><br>Responsibilities include: </p>
                 </div>
-                <img src="Images/studentmedia.jpg" alt="UCLA Student Media" width="300px" height="200px" style="float:left; margin-left: 35%; margin-right: 20px; margin-bottom: 30px;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 30px;">
+                <img src="Images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
+                    <p>IT Services Student Consultant<br><br>Responsibilities include: </p>
+                </div>
+                <img src="Images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
                     <p>DevOps Intern<br><br>Responsibilities include: </p>
                 </div>
-                <img src="Images/landmark.png" alt="Landmark Theatres" width="300px" height="200px" style="float:left; margin-left: 35%; margin-right: 20px; margin-bottom: 30px;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 30px;">
+                <img src="Images/landmark.png" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
                     <p>Floor Staff<br><br>Responsibilities include: </p>
                 </div>
             </div>
         </div>
-
+        <!--New Style = General Info + Nav Links on left -> right side displays tab info-->
         <div class="tabContent" id="projects" style="display: none;">
             <h2>Projects</h2>
+            <div>
+                <div>
+                    <p>CS174C</p>
+                </div>
+            </div>
         </div>
 
         <footer>Contact Me</footer>
@@ -56,7 +65,6 @@
             function displayTab(tabName) {
                 let prevContent, i;
 
-                //Issue Hiding Other Content
                 prevContent = document.getElementsByClassName("tabContent");
                 for (i = 0; i < prevContent.length; i++) {
                     prevContent[i].style.display = "none";
