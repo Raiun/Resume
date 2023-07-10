@@ -12,65 +12,77 @@
                 <img src="Images/github.ico" width="32px" height="32px"></a>
             <a href="https://www.linkedin.com/in/ryan-man/" target="_blank">
                 <img src="Images/linkedin.ico" width="32px" height="32px"></a>
-            <a href="projects.html" alt="home.html">Projects</a>
-            <a href="home.html">Home</a>
+            <a href="mailto: ryan.man821@gmail.com" alt="ryan.man821@gmail.com">Contact</a>
         </header>
-
         <div>
-            <button class="tabLink" onclick="displayTab('resume')">Resume</button>
-            <button class="tabLink" onclick="displayTab('experience')">Work Experience</button>
-            <button class="tabLink" onclick="displayTab('projects')">Projects</button>
+            <p style="text-align: center;">Hello, my name is Ryan Man.<br>I'm a senior Computer 
+                Engineering student at UCLA</p>
         </div>
-        
-        <!--Tab Content-->
-        <div class="tabContent" id="resume" style="display: none;">
-            <h2>Resume</h2>
-            <img src="Resume.jpg" alt="Resume" width="750px" height="1000px">
+        <div id="unpressed">
+            <!--Resume-->
+            <button class="tabLink" onclick="displayTab('resume')">Resume</button>
+                <div class="tabContent" id="resume" style="display: none;">
+                    <h2>Resume</h2>
+                    <img src="Resume.jpg" alt="Resume" width="750px" height="1000px">
+                </div>
+
+            <!--Work Experience-->
+            <button class="tabLink" onclick="displayTab('experience')">Work Experience</button>
+                <div class="tabContent" id="experience" style="display: none;">
+                    <h2>Work Experience</h2>
+                    <div>
+                        <img src="Images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                        <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
+                            <p>Software Engineering Intern<br><br>Responsibilities include: </p>
+                        </div>
+                        <img src="Images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                        <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
+                            <p>IT Services Student Consultant<br><br>Responsibilities include: </p>
+                        </div>
+                        <img src="Images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                        <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
+                            <p>DevOps Intern<br><br>Responsibilities include: </p>
+                        </div>
+                        <img src="Images/landmark.png" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
+                        <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
+                            <p>Floor Staff<br><br>Responsibilities include: </p>
+                        </div>
+                    </div>
+                </div>
+            <!--Projects-->
+            <button class="tabLink" onclick="displayTab('projects')">Projects</button>
+                <div class="tabContent" id="projects" style="display: none;">
+                    <h2>Projects</h2>
+                    <div>
+                        <div>
+                            <p>CS174C</p>
+                        </div>
+                    </div>
+                </div>
         </div>
 
-        <div class="tabContent" id="experience" style="display: none;">
-            <h2>Work Experience</h2>
-            <div>
-                <img src="Images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                    <p>Software Engineering Intern<br><br>Responsibilities include: </p>
-                </div>
-                <img src="Images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                    <p>IT Services Student Consultant<br><br>Responsibilities include: </p>
-                </div>
-                <img src="Images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                    <p>DevOps Intern<br><br>Responsibilities include: </p>
-                </div>
-                <img src="Images/landmark.png" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                <div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                    <p>Floor Staff<br><br>Responsibilities include: </p>
-                </div>
-            </div>
-        </div>
         <!--New Style = General Info + Nav Links on left -> right side displays tab info-->
-        <div class="tabContent" id="projects" style="display: none;">
-            <h2>Projects</h2>
-            <div>
-                <div>
-                    <p>CS174C</p>
-                </div>
-            </div>
-        </div>
 
         <footer>Contact Me</footer>
         
         <script>
             function displayTab(tabName) {
-                let prevContent, i;
+                let prevContent, i, tab;
 
                 prevContent = document.getElementsByClassName("tabContent");
                 for (i = 0; i < prevContent.length; i++) {
                     prevContent[i].style.display = "none";
                 }
                 
-                document.getElementById(tabName).style.display = "block";
+                tab = document.getElementById(tabName);
+
+                if (tab.parentElement.id == "unpressed") {
+                    document.getElementById(tabName).style.display = "block";
+                    tab.parentElement.id = "pressed";
+                }
+                else {
+                    tab.parentElement.id = "unpressed";
+                }
             } 
         </script>
     </body>

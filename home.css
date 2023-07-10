@@ -1,13 +1,12 @@
 body {
     margin: 0;
-    font: "cambria";
+    font: "times-new-roman";
     font-size: 16px;
 }
 
 header {
     background-color: grey;
     border-color: grey;
-    padding: 12px;
     overflow: hidden;
     font-size: 30px;
 }
@@ -51,13 +50,18 @@ a::hover {
 }
 
 a::visited {
-    color: black
+    color: black;
     text-decoration: none;
 }
 
 .tabLink {
+    display: block;
     margin-top: 10px;
     padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 30%;
     border: none;
 }
 
