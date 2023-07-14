@@ -1,13 +1,14 @@
 body {
     margin: 0;
-    font: "optima";
+    font-family: Helvetica;
     font-weight: bold;
     font-size: 16px;
 }
 
 header {
-    background-color: grey;
-    border-color: grey;
+    border-bottom: 2px solid;
+    border-color: black;
+    margin-bottom: 10px;
     overflow: hidden;
     font-size: 30px;
 }
@@ -56,6 +57,7 @@ a::visited {
 }
 
 .tabLink {
+    font-weight: bold;
     display: block;
     margin-top: 10px;
     padding: 10px;
