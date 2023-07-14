@@ -6,11 +6,11 @@ body {
 }
 
 header {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     border-color: black;
     margin-bottom: 10px;
     overflow: hidden;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 header a {
