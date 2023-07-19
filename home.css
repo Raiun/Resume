@@ -6,11 +6,11 @@ body {
 }
 
 header {
-    border-bottom: 2px solid;
-    border-color: black;
+    border-bottom: 1px solid;
+    border-color: lightgray;
     margin-bottom: 10px;
     overflow: hidden;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 header a {
@@ -23,7 +23,7 @@ header a:hover {
 }
 
 #logo {
-    margin: 0;
+    margin: 0 50px 0;
     padding: 2px;
     float: left;
 }
@@ -35,10 +35,11 @@ div {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: black;
     margin-top: 30px;
     padding: 40px;
     text-align: center;
+    color: white;
 }
 
 a {
