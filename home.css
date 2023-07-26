@@ -7,17 +7,10 @@ body {
 
 header {
     border-bottom: 1px solid;
-<<<<<<< HEAD
-    border-color: black;
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-size: 25px;
-=======
     border-color: lightgray;
     margin-bottom: 10px;
     overflow: hidden;
     font-size: 24px;
->>>>>>> 3b7a8bc3685d2d5acff00ea49b47cb67b2b9e07a
 }
 
 header a {
@@ -37,8 +30,25 @@ header a:hover {
 
 #content {
     border: 1px solid lightgray;
-    width: 80%;
     margin: auto;
+    width: 50%;
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+}
+
+.gridItem {
+    height: 120px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gridItem:hover {
+    transform: scale(1.1);
 }
 
 div {
