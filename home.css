@@ -28,6 +28,12 @@ header a:hover {
     float: left;
 }
 
+#content {
+    border: 1px solid lightgray;
+    width: 80%;
+    margin: auto;
+}
+
 div {
     display: block;
     margin: auto;
@@ -72,6 +78,7 @@ a::visited {
 }
 
 .tabLink:hover {
+    transform: scale(1.1);
     background-color: lightgray;
 }
 
