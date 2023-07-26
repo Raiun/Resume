@@ -4,6 +4,11 @@
         <title>Ryan Man</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="home.css">
+        <base target="_blank">
+        <meta name="description" content="Ryan Man personal website">
+        <meta name="keywords" content="Ryan Man, Ryan, Man, resume, software, engineer, UCLA">
+        <meta name="author" content="Ryan Man">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
@@ -16,89 +21,79 @@
         </header>
 
         <!--Page Content-->
-        <div>
-            <div style="border: 1px solid black; width: 800px; height: 300px; background-color: #FAF9F6;">
-                <p style="padding-top: 100px;">
-                    Hello, my name is Ryan Man.<br>I'm a senior Computer 
-                    Engineering student at UCLA<br><br>
-                    <a href="home.html#info">More</a>
-                </p>
-            </div>
-        </div>
         <div id="content">
-            <!--Work-->
-            <img class="gridItem" src="images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
-            <img class="gridItem" src="images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
-            <img class="gridItem" src="images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
-            <img class="gridItem" src="images/landmark.jpg" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
-        </div>
-            <!--Hidden-->
-            <div id="unpressed" style="display:none">
-                <!--Resume-->
-                <button class="tabLink" onclick="displayTab('resume')">Resume</button>
-                    <div class="tabContent" id="resume" style="display: none;">
-                        <img src="images/resume.jpg" alt="Resume" width="750px" height="1000px">
-                    </div>
-    
-                <!--Work Experience-->
-                <button class="tabLink" onclick="displayTab('experience')">Work Experience</button>
-                    <div class="tabContent" id="experience" style="display: none;">
-                        <h2>Work Experience</h2>
-                        <div style="display:inline">
-                            <img src="images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                            <!--<div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                                <p>Software Engineering Intern<br><br>Responsibilities include: </p>
-                            </div>-->
-                            <img src="images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                            <!--<div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                                <p>IT Services Student Consultant<br><br>Responsibilities include: </p>
-                            </div>-->
-                            <img src="images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                            <!--<div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                                <p>DevOps Intern<br><br>Responsibilities include: </p>
-                            </div>-->
-                            <img src="images/landmark.jpg" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin-left: 350px; margin-right: 20px; margin-bottom: 5%;">
-                            <!--<div style="height:200px; width: 300px; text-align: left; margin-bottom: 5%;">
-                                <p>Floor Staff<br><br>Responsibilities include: </p>
-                            </div>-->
-                        </div>
-                    </div>
-                <!--Projects-->
-                <button class="tabLink" onclick="displayTab('projects')">Projects</button>
-                    <div class="tabContent" id="projects" style="display: none;">
-                        <h2>Projects</h2>
-                        <div>
-                            <div>
-                                <p>CS174C</p>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+                <div style="border: 1px solid black; width: 90%; height: 300px;">
+                    <p style="margin-left: 30px;margin-top: 50px; text-align: left;">
+                        Hello, my name is Ryan Man.<br>I'm a senior Computer 
+                        Engineering student at UCLA<br><br>
+                    </p>
+                    <a class="introLink"style="text-align: left; padding-left: 0;" href="images/resume.jpg">Resume</a>
+                    <a class="introLink"style="text-align: left; padding-left: 0;" href="home.html#info">More</a>
                 </div>
             </div>
-            <!--New Style = General Info + Nav Links on left -> right side displays tab info-->
-    
-            <footer>Contact Me</footer>
-            
-            <script>
-                function displayTab(tabName) {
-                    let prevContent, i, tab;
-    
-                    prevContent = document.getElementsByClassName("tabContent");
-                    for (i = 0; i < prevContent.length; i++) {
-                        prevContent[i].style.display = "none";
-                    }
-                    
-                    tab = document.getElementById(tabName);
-    
-                    if (tab.parentElement.id == "unpressed") {
-                        document.getElementById(tabName).style.display = "block";
-                        tab.parentElement.id = "pressed";
-                    }
-                    else {
-                        tab.parentElement.id = "unpressed";
-                    }
-                } 
-            </script>
+
+            <!--Work-->
+            <p style="text-align:left; margin-left:5%;">Work Experience</p>
+            <div class="imgGrid">
+                <details>
+                    <summary>
+                    <img class="gridItem" src="images/pullscription.png" alt="Pullscription" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>Software Engineering Intern</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="images/uclait.png" alt="UCLA IT Services" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>IT Student Consultant</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="images/studentmedia.jpg" alt="UCLA Student Media" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>DevOps Intern</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="images/landmark.jpg" alt="Landmark Theatres" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>Floor Staff</p>
+                </details>
+            </div>
+
+            <!--Projects-->
+            <p style="text-align:left; margin-left:5%;">Projects</p>
+            <div class="imgGrid">
+                <details>
+                    <summary>
+                    <img class="gridItem" src="" alt="P1" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>Software Engineering Intern</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="" alt="P2" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>IT Student Consultant</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="" alt="P3" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>DevOps Intern</p>
+                </details>
+                <details>
+                    <summary>
+                        <img class="gridItem" src="" alt="P4" width="325px" height="200px" style="float:left; margin: auto; margin-bottom: 5%;">
+                    </summary>
+                    <p>Floor Staff</p>
+                </details>
+            </div>
         </div>
+        <footer></footer>
+
+        <script>     
+        </script>
     </body>
 </html>
