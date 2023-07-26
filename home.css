@@ -7,10 +7,17 @@ body {
 
 header {
     border-bottom: 1px solid;
+<<<<<<< HEAD
     border-color: black;
     margin-bottom: 10px;
     overflow: hidden;
     font-size: 25px;
+=======
+    border-color: lightgray;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 24px;
+>>>>>>> 3b7a8bc3685d2d5acff00ea49b47cb67b2b9e07a
 }
 
 header a {
@@ -23,9 +30,15 @@ header a:hover {
 }
 
 #logo {
-    margin: 0;
+    margin: 0 50px 0;
     padding: 2px;
     float: left;
+}
+
+#content {
+    border: 1px solid lightgray;
+    width: 80%;
+    margin: auto;
 }
 
 div {
@@ -35,10 +48,11 @@ div {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: black;
     margin-top: 30px;
     padding: 40px;
     text-align: center;
+    color: white;
 }
 
 a {
@@ -71,6 +85,7 @@ a::visited {
 }
 
 .tabLink:hover {
+    transform: scale(1.1);
     background-color: lightgray;
 }
 
