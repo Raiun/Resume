@@ -9,13 +9,16 @@ header {
     border-bottom: 1px solid;
     border-color: lightgray;
     margin-bottom: 10px;
-    overflow: hidden;
     font-size: 24px;
+    height: 35px;
+    overflow: hidden;
 }
 
+/*Issue with hover being bigger than header size*/
 header a {
     float: right;
     text-align: center;
+    font-size: 24px;
 }
 
 header a:hover {
@@ -59,12 +62,19 @@ header a:hover {
 }
 
 .gridItem {
-    height: 150px;
-    width: 240px;
-    border: 1px solid black;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
     text-align: center;
     font-weight: bold;
     filter: drop-shadow(0 0 0.2rem gray);
+    background-color: white;
+}
+
+.gridImg {
+    height: 150px;
+    width: 240px;
+    text-align: center;
 }
 
 .gridItem:hover {
@@ -106,10 +116,6 @@ a {
     color: black;
     padding: 5px;
     text-decoration: none;
-}
-
-a::hover {
-    background-color: #326672;
 }
 
 a::visited {

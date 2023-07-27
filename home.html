@@ -30,79 +30,103 @@
                         Hello, my name is Ryan Man.<br>I'm a senior Computer 
                         Engineering student at UCLA<br><br>
                     </p>
-                    <a class="introLink"style="text-align: left; padding-left: 0;" href="images/resume.jpg">Resume</a>
-                    <a target="_self" class="introLink" style="text-align: left; padding-left: 0;" href="home.html#info">More</a>
+                    <a class="introLink" href="images/resume.jpg">Resume</a>
+                    <a target="_self" class="introLink" href="home.html#info">More</a>
                 </div>
             </div>
             <br><!--Temporary Break Statement before CSS styling-->
-            <button id="expand" onclick="expand()">Expand All</button>
 
             <!--Work-->
-            <p id="info" style="text-align:left; margin-left:5%;">Work Experience</p>
+            <p id="info" style="text-align:left; margin-left:5%;">
+                Work Experience
+                <button id="expand" onclick="expand()">Expand All</button>
+            </p>
             <div class="imgGrid">
-                <details>
-                    <summary>
-                        <p>2023</p>
-                        <p>Software Engineering Intern</p>
-                        <img class="gridItem" src="images/pullscription.png" alt="Pullscription">
-                    </summary>
-                    <p class="contentDetail">Software Engineering Intern</p>
-                </details>
-                <details>
-                    <summary>
-                        <p>2023-Present</p>
+                <div class="gridItem">
+                    <details class="d1">
+                        <summary>
+                            <p>2023</p>
+                            <p>Software Engineering Intern</p>
+                            <img class="gridImg" src="images/pullscription.png" alt="Pullscription">
+                        </summary>
+                        <p class="contentDetail">Software Engineering Intern</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d1">
+                        <summary>
+                            <p>2023-Present</p>
+                            <p>IT Student Consultant</p>
+                            <img class="gridImg" src="images/uclait.png" alt="UCLA IT Services">
+                        </summary>
                         <p>IT Student Consultant</p>
-                        <img class="gridItem" src="images/uclait.png" alt="UCLA IT Services">
-                    </summary>
-                    <p>IT Student Consultant</p>
-                </details>
-                <details>
-                    <summary>
-                        <p>2023-Present</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d1">
+                        <summary>
+                            <p>2023-Present</p>
+                            <p>DevOps Intern</p>
+                            <img class="gridImg" src="images/studentmedia.jpg" alt="UCLA Student Media">
+                        </summary>
                         <p>DevOps Intern</p>
-                        <img class="gridItem" src="images/studentmedia.jpg" alt="UCLA Student Media">
-                    </summary>
-                    <p>DevOps Intern</p>
-                </details>
-                <details>
-                    <summary>
-                        <p>2019-2020</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d1">
+                        <summary>
+                            <p>2019-2020</p>
+                            <p>Floor Staff</p>
+                            <img class="gridImg" src="images/landmark.jpg" alt="Landmark Theatres">
+                        </summary>
                         <p>Floor Staff</p>
-                        <img class="gridItem" src="images/landmark.jpg" alt="Landmark Theatres">
-                    </summary>
-                    <p>Floor Staff</p>
-                </details>
+                    </details>
+                </div>
             </div>
 
             <!--Projects-->
-            <p style="text-align:left; margin-left:5%;">Projects</p>
+            <p style="text-align:left; margin-left:5%;">
+                Projects
+                <button id="expand" onclick="expand('d2')">Expand All</button>
+            </p>
             <div class="imgGrid">
-                <details>
-                    <summary>
-                    <img class="gridItem" src="" alt="P1">
-                    </summary>
-                    <p>Software Engineering Intern</p>
-                </details>
-                <details>
-                    <summary>
-                        <img class="gridItem" src="" alt="P2">
-                    </summary>
-                    <p>IT Student Consultant</p>
-                </details>
-                <details>
-                    <summary>
-                        <img class="gridItem" src="" alt="P3">
-                    </summary>
-                    <p>DevOps Intern</p>
-                </details>
-                <details>
-                    <summary>
-                        <img class="gridItem" src="" alt="P4">
-                    </summary>
-                    <p>Floor Staff</p>
-                </details>
+                <div class="gridItem">
+                    <details class="d2">
+                        <summary>
+                            <p>P1</p>
+                            <img class="gridImg" src="" alt="P1">
+                        </summary>
+                        <p class="contentDetail">Software Engineering Intern</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d2">
+                        <summary>
+                            <p>P2</p>
+                            <img class="gridImg" src="" alt="P2">
+                        </summary>
+                        <p>IT Student Consultant</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d2">
+                        <summary>
+                            <p>P3</p>
+                            <img class="gridImg" src="" alt="P3">
+                        </summary>
+                        <p>DevOps Intern</p>
+                    </details>
+                </div>
+                <div class="gridItem">
+                    <details class="d2">
+                        <summary>
+                            <p>P4</p>
+                            <img class="gridImg" src="" alt="P4">
+                        </summary>
+                        <p>Floor Staff</p>
+                    </details>
+                </div>
             </div>
-        </div>
         <footer></footer>
     </body>
 </html>
