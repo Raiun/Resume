@@ -33,6 +33,8 @@
                     <a class="introLink"style="text-align: left; padding-left: 0;" href="home.html#info">More</a>
                 </div>
             </div>
+            <br><!--Temporary Break Statement before CSS styling-->
+            <button onclick="expand()">Expand All</button>
 
             <!--Work-->
             <p style="text-align:left; margin-left:5%;">Work Experience</p>
@@ -103,6 +105,10 @@
         <footer></footer>
 
         <script>     
+        function expand() {
+            document.body.querySelectorAll('details')
+            .forEach((e) => {(e.hasAttribute('open')) ? e.removeAttribute('open') : e.setAttribute('open', true);})
+        }
         </script>
     </body>
 </html>
