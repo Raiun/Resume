@@ -20,3 +20,8 @@ function expand(type) {
         }
     }
 }
+
+function popupDetails() {
+    console.log("Called");
+    //document.getElementsByTagName("body").style.filter = "blur(4px)";
+}
