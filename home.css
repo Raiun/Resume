@@ -56,8 +56,8 @@ header a:hover {
   
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: black }
-    50% { border-color: transparent }
+    from , to { border-color:transparent}
+   50%{border-color:black}
 }
 
 .introLink {
@@ -117,8 +117,6 @@ details summary {
     color: white;
     border-radius: 5px;
     float: right;
-    margin-right: 5%;
-    margin-bottom: 10px;
 }
 
 #expand:hover {
