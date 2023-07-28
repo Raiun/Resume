@@ -47,6 +47,7 @@ header a:hover {
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
     position: absolute;
+    background-image: url(images/me.jpg);
 }
 
 /* The typing effect */
@@ -62,7 +63,6 @@ header a:hover {
 }
 
 .introLink {
-    display: block;
     width: 80px;
     height: 20px;
     padding: 5px 10px;
@@ -72,10 +72,10 @@ header a:hover {
     text-align: center;
     color: white;
     border-radius: 5%;
+    float: left;
 }
 
 .imgGrid {
-    border: 1px solid lightgray;
     margin: auto;
     margin-top: 20px;
     width: 90%;
