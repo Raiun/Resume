@@ -23,13 +23,13 @@
 
         <!--Page Content-->
         <div id="content">
-            <div>
-                <div style="border: 1px solid black; width: 90%; height: 300px;">
-                    <img style="float:right" width="400px" height="300px" src="images/me.jpg" alt="Me"></img>
-                    <p style="margin-left: 30px;margin-top: 50px; text-align: left;">
-                        Hello, my name is Ryan Man.<br>I'm a senior Computer 
-                        Engineering student at UCLA<br><br>
-                    </p>
+            <div class="typewriter" style="border: 1px solid black; width: 90%; height: 300px;">
+                <img style="float:right" width="400px" height="300px" src="images/me.jpg" alt="Me"></img>
+                <h1 style="margin-left: 30px;margin-top: 50px; text-align: left;">
+                    Hello, my name is Ryan Man.<br>I'm a senior Computer 
+                    Engineering student at UCLA
+                </h1>
+                <div style="margin-top: 150px;">
                     <a class="introLink" href="images/resume.jpg">Resume</a>
                     <a target="_self" class="introLink" href="home.html#info">More</a>
                 </div>
@@ -39,7 +39,7 @@
             <!--Work-->
             <p id="info" style="text-align:left; margin-left:5%;">
                 Work Experience
-                <button id="expand" onclick="expand()">Expand All</button>
+                <button class="expand" id="exd1" onclick="expand('d1')">Expand</button>
             </p>
             <div class="imgGrid">
                 <div class="gridItem">
@@ -87,8 +87,8 @@
             <!--Projects-->
             <p style="text-align:left; margin-left:5%;">
                 Projects
-                <button id="expand" onclick="expand('d2')">Expand All</button>
             </p>
+            <button class="expand" id="exd2" onclick="expand('d2')">Expand</button>
             <div class="imgGrid">
                 <div class="gridItem">
                     <details class="d2">

@@ -1,9 +1,22 @@
 //Function to open or close additional content in details
 function expand(type) {
-    document.body.querySelectorAll('details')
-    .forEach((e) => {(e.hasAttribute('open')) ? e.removeAttribute('open') : e.setAttribute('open', true);})
-    /*const elements = document.getElementsByClassName(type)
-    for (let i = 0; i < document.length; i++) {
-        (elements[i].hasAttribute("open")) ? element.removeAttribute("open") : element.hasAttribute("open", true);
-    }*/
+    if (type === "d1") {
+        const expandButton = document.getElementById("exd1").innerHTML; 
+        document.getElementById("exd1").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand";     
+    }
+    else if (type === "d2") {
+        const expandButton = document.getElementById("exd1").innerHTML; 
+        document.getElementById("exd2").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand"; 
+    }
+    
+    const elements = document.getElementsByClassName(type);
+    
+    for (let i = 0; i < elements.length; i++) {
+        if(elements[i].hasAttribute("open")) {
+            elements[i].removeAttribute("open");
+        }
+        else {
+            elements[i].setAttribute("open", true);
+        }
+    }
 }
