@@ -4,8 +4,8 @@ function expand(type) {
         const expandButton = document.getElementById("exd1").innerHTML; 
         document.getElementById("exd1").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand";     
     }
-    else if (type === "d2") {
-        const expandButton = document.getElementById("exd1").innerHTML; 
+    if (type === "d2") {
+        const expandButton = document.getElementById("exd2").innerHTML; 
         document.getElementById("exd2").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand"; 
     }
     
