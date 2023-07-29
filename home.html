@@ -23,7 +23,7 @@
 
         <!--Page Content-->
         <div id="content">
-            <div style="border-bottom: 1px solid lightgray; width: 90%; height: 500px;">
+            <div style="width: 90%; height: 66vh;">
                 <img style="float:right" width="450px" height="350px" src="images/me.jpg" alt="Me"></img>
                 <h1 style="margin-left: 30px;margin-top: 50px; text-align: left;">
                     Hello, my name is Ryan Man.<br>I'm a senior Computer 
@@ -36,49 +36,49 @@
             </div>
 
             <!--Work-->
-            <div style="width: 90%; height: 50px;">
+            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;">
                 <h1 id="info" style="text-align:left;">
                     Work Experience
                     <button class="expand" id="exd1" onclick="expand('d1')">Expand</button>
                 </h1>
             </div>
-            <div class="imgGrid">
-                <div class="gridItem" onclick="popupDetails()">
+            <div class="carouselGrid">
+                <div class="carouselItem" onclick="popupDetails()">
                     <details class="d1">
                         <summary>
                             <p>2023</p>
                             <p>Software Engineering Intern</p>
-                            <img class="gridImg" src="images/pullscription.png" alt="Pullscription">
+                            <img class="carouselImg" src="images/pullscription.png" alt="Pullscription">
                         </summary>
                         <p class="contentDetail">Software Engineering Intern</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d1">
                         <summary>
                             <p>2023-Present</p>
                             <p>IT Student Consultant</p>
-                            <img class="gridImg" src="images/uclait.png" alt="UCLA IT Services">
+                            <img class="carouselImg" src="images/uclait.png" alt="UCLA IT Services">
                         </summary>
                         <p>IT Student Consultant</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d1">
                         <summary>
                             <p>2023-Present</p>
                             <p>DevOps Intern</p>
-                            <img class="gridImg" src="images/studentmedia.jpg" alt="UCLA Student Media">
+                            <img class="carouselImg" src="images/studentmedia.jpg" alt="UCLA Student Media">
                         </summary>
                         <p>DevOps Intern</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d1">
                         <summary>
                             <p>2019-2020</p>
                             <p>Floor Staff</p>
-                            <img class="gridImg" src="images/landmark.jpg" alt="Landmark Theatres">
+                            <img class="carouselImg" src="images/landmark.jpg" alt="Landmark Theatres">
                         </summary>
                         <p>Floor Staff</p>
                     </details>
@@ -86,48 +86,77 @@
             </div>
             <br><br><br>
             <!--Projects-->
-            <div style="width: 90%; height: 50px;">
+            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;">
                 <h1 id="info" style="text-align:left;">
                     Projects
                     <button class="expand" id="exd2" onclick="expand('d2')">Expand</button>
                 </h1>
             </div>
-            <div class="imgGrid">
-                <div class="gridItem">
+            <div class="carouselGrid">
+                <div class="carouselItem">
                     <details class="d2">
                         <summary>
                             <p>P1</p>
-                            <img class="gridImg" src="" alt="P1">
+                            <img class="carouselImg" src="" alt="P1">
                         </summary>
                         <p class="contentDetail">Software Engineering Intern</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d2">
                         <summary>
                             <p>P2</p>
-                            <img class="gridImg" src="" alt="P2">
+                            <img class="carouselImg" src="" alt="P2">
                         </summary>
                         <p>IT Student Consultant</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d2">
                         <summary>
                             <p>P3</p>
-                            <img class="gridImg" src="" alt="P3">
+                            <img class="carouselImg" src="" alt="P3">
                         </summary>
                         <p>DevOps Intern</p>
                     </details>
                 </div>
-                <div class="gridItem">
+                <div class="carouselItem">
                     <details class="d2">
                         <summary>
                             <p>P4</p>
-                            <img class="gridImg" src="" alt="P4">
+                            <img class="carouselImg" src="" alt="P4">
                         </summary>
                         <p>Floor Staff</p>
                     </details>
+                </div>
+            </div>
+
+            <br><br><br>
+            <!--Education-->
+            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;">
+                <h1 id="info" style="text-align:left;">
+                    Education
+                </h1>
+            </div>
+            <div id="educationGrid">
+                <div class="educationItem">
+                    <h2>University of California, Los Angeles (UCLA)</h2>
+                    <h3>Bachelor of Science, Computer Engineering <span style="float:right; font-weight: normal;"><i>Expected June 2024</i></span></h3>
+                    <h4>Relevant Coursework</h4>
+                    <p> Operating Systems, Software Construction Laboratory, Digital Design Laboratory, Data Structures & Algorithms, 
+                        Electrical & Electronic Circuits, Systems & Signals, Introduction to Engineering: Internet of Things, 
+                        Computer Networking Fundamentals, Digital Signal Processing, Digital Circuit Design
+                    </p>
+                </div>
+                <div class="educationItem">
+                    <h2 style="padding-left: 10px;">Laney College</h2>
+                    <h3 style="padding-left: 10px; margin-bottom: 0;">Associate of Science, Mathematics <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
+                    <h3 style="padding-left: 10px; margin-top: 0;">Associate of Science, CIS/Computer Programming <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
+                    <h4 style="padding-left: 10px;">Relevant Coursework</h4>
+                    <p style="padding-left: 10px;"> Introduction to Computer Programming, Microcomputer Assembly Language, Object-Oriented Programming Using C++,
+                        Java Programming Language I, Structure and Interpretation of Computer Programs, Calulus I, Calculus II, Calculus III, Differential Equations,
+                        Linear Algebra, Physics: Mechanics, Physics: Electromagnetism, Physics: Optics & Quantum Physics
+                    </p>
                 </div>
             </div>
         <footer></footer>

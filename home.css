@@ -65,7 +65,7 @@ header a:hover {
 .introLink {
     width: 80px;
     height: 20px;
-    padding: 5px 10px;
+    padding: 15px;
     margin-left: 30px;
     margin-bottom: 20px;
     background-color: #326672;
@@ -75,9 +75,10 @@ header a:hover {
     float: left;
 }
 
-.imgGrid {
+.carouselGrid {
     margin: auto;
     margin-top: 20px;
+    padding: 40px 40px;
     width: 90%;
     height: 300px;
     display: grid;
@@ -87,7 +88,7 @@ header a:hover {
     justify-content: center;
 }
 
-.gridItem {
+.carouselItem {
     height: 300px;
     width: 250px;
     border-radius: 10px;
@@ -97,14 +98,36 @@ header a:hover {
     background-color: white;
 }
 
-.gridImg {
+.carouselImg {
     height: 150px;
     width: 240px;
     text-align: center;
 }
 
-.gridItem:hover {
+.carouselItem:hover {
     transform: scale(1.1);
+}
+
+#educationGrid {
+    margin-top: 20px;
+    width: 90%;
+    height: 300px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: center;
+}
+
+.educationItem {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    text-align: left;
+    font-weight: normal;
 }
 
 details summary {
