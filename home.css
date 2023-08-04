@@ -1,14 +1,12 @@
 body {
     margin: 0;
-    font-family: Helvetica;
+    font-family: "Playfair Display";
     font-weight: bold;
     font-size: 16px;
 }
 
 header {
     width: 100%;
-    border-bottom: 1px solid;
-    border-color: lightgray;
     margin-bottom: 10px;
     font-size: 24px;
     height: 35px;
@@ -19,21 +17,20 @@ header {
 header a {
     float: right;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 header a:hover {
     background-color: lightgray;
 }
 
-#logo {
-    margin: 0 5%;
-    padding: 2px;
-    float: left;
-}
-
 #content {
     min-height: calc(100vh - 150px);
+}
+
+li {
+    display: inline;
 }
 
 .typewriter h1 {
@@ -94,13 +91,13 @@ header a:hover {
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
-    filter: drop-shadow(0 0 0.2rem gray);
+    filter: drop-shadow(0 0 0.3rem gray);
     background-color: white;
 }
 
 .carouselImg {
-    height: 150px;
-    width: 240px;
+    height: 170px;
+    width: 100%;
     text-align: center;
 }
 
@@ -117,6 +114,7 @@ header a:hover {
     row-gap: 30px;
     grid-template-columns: repeat(2, 48%);
     justify-content: center;
+    font-family: Helvetica;
 }
 
 .educationItem {
@@ -156,10 +154,9 @@ div {
 footer {
     width: 100%;
     height: 100px;
-    background-color: black;
     margin-top: 30px;
     text-align: center;
-    color: white;
+    border-top: 1px solid lightgray;
 }
 
 a {
