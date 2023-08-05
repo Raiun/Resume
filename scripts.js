@@ -21,7 +21,19 @@ function expand(type) {
     }
 }
 
-function popupDetails() {
-    console.log("Called");
-    //document.getElementsByTagName("body").style.filter = "blur(4px)";
+function popup(card) {
+    //(document.body.style.filter == "none") ? document.body.style.filter = "blur(4px)" : document.body.style.filter = "none";
+    document.getElementById("content").classList.toggle("darken");
+    let popup = document.getElementById(card);
+    console.log(card)
+    popup.classList.toggle("show");
+    console.log(popup)
+}
+
+function exitPopup() {
+    blurEffect = document.body.style.filter;
+    console.log(blurEffect);
+    if (blurEffect == "blur(4px)") {
+        document.body.style.filter = "none";
+    }
 }

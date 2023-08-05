@@ -5,6 +5,12 @@ body {
     font-size: 16px;
 }
 
+.darken {
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+}
+
 header {
     width: 100%;
     margin-bottom: 10px;
@@ -23,6 +29,32 @@ header a {
 
 header a:hover {
     background-color: lightgray;
+}
+
+.popup {
+    visibility: hidden;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    filter: drop-shadow(0 0 0.3rem gray);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    pointer-events: none;
+}
+
+.noBlur {
+    filter: none;
 }
 
 #content {
