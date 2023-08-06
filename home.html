@@ -18,6 +18,7 @@
         <!--Popup-->
         <div id="w1" class="popup">
             <p>HELLO WORLD</p>
+            <button onclick="popup('w1')" style="float:right">X</button> <!--Function doesn't work-->
         </div>
         <!--Page Content-->
         <div id="content">
@@ -31,7 +32,7 @@
                 <a href="" alt="">About Me</a>
             </header>
 
-            <div style="width: 85%; height: 66vh;">
+            <div id="intro">
                 <img style="float:right" width="50%" height="100%" src="images/me.jpg" alt="Me"></img>
                 <h1 style="margin-top: 50px; text-align: left; font-size: 50px;">
                     Ryan Man<br>Computer 
@@ -60,7 +61,7 @@
             </div>
 
             <!--Work-->
-            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;">
+            <div class="sectionTitle">
                 <h1 id="info" style="text-align:left;">
                     Work Experience
                     <button class="expand" id="exd1" onclick="expand('d1')">Expand</button>
@@ -108,15 +109,15 @@
                     </details>
                 </div>
             </div>
-            <br><br><br>
+
             <!--Projects-->
-            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;" onclick="popup('p1')">
+            <div class="sectionTitle">
                 <h1 id="info" style="text-align:left;">
                     Projects
                     <button class="expand" id="exd2" onclick="expand('d2')">Expand</button>
                 </h1>
             </div>
-            <div class="carouselGrid" onclick="popup('p2')">
+            <div class="carouselGrid" onclick="popup('p1')">
                 <div class="carouselItem">
                     <details class="d2">
                         <summary>
@@ -126,7 +127,7 @@
                         <p class="contentDetail">Bruin-Study</p>
                     </details>
                 </div>
-                <div class="carouselItem" onclick="popup('p3')">
+                <div class="carouselItem" onclick="popup('p2')">
                     <details class="d2">
                         <summary>
                             <p>Twitter Sentiment Tracker</p>
@@ -135,7 +136,7 @@
                         <p>Twitter Sentiment Tracker</p>
                     </details>
                 </div>
-                <div class="carouselItem" onclick="popup('p4')">
+                <div class="carouselItem" onclick="popup('p3')">
                     <details class="d2">
                         <summary>
                             <p>Automotive Pilot State Recognition</p>
@@ -144,7 +145,7 @@
                         <p>Automotive Pilot State Recognition</p>
                     </details>
                 </div>
-                <div class="carouselItem">
+                <div class="carouselItem" onclick="popup('p4')">
                     <details class="d2">
                         <summary>
                             <p>UCLA Institute of Electrical Engineering Micromouse Program</p>
@@ -155,9 +156,9 @@
                 </div>
             </div>
 
-            <br><br><br>
+
             <!--Education-->
-            <div style="width: 90%; height: 50px; border-top: 1px solid lightgray;">
+            <div class="sectionTitle">
                 <h1 id="info" style="text-align:left;">
                     Education
                 </h1>
@@ -173,11 +174,11 @@
                     </p>
                 </div>
                 <div class="educationItem">
-                    <h2 style="padding-left: 10px;">Laney College</h2>
-                    <h3 style="padding-left: 10px; margin-bottom: 0;">Associate of Science, Mathematics <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
-                    <h3 style="padding-left: 10px; margin-top: 0;">Associate of Science, CIS/Computer Programming <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
-                    <h4 style="padding-left: 10px;">Relevant Coursework</h4>
-                    <p style="padding-left: 10px;"> Introduction to Computer Programming, Microcomputer Assembly Language, Object-Oriented Programming Using C++,
+                    <h2>Laney College</h2>
+                    <h3 style="margin-bottom: 0;">Associate of Science, Mathematics <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
+                    <h3 style="margin-top: 0;">Associate of Science, CIS/Computer Programming <span style="float:right; font-weight: normal;padding-right: 10px;"><i>August 2021</i></span></h3>
+                    <h4>Relevant Coursework</h4>
+                    <p> Introduction to Computer Programming, Microcomputer Assembly Language, Object-Oriented Programming Using C++,
                         Java Programming Language I, Structure and Interpretation of Computer Programs, Calulus I, Calculus II, Calculus III, Differential Equations,
                         Linear Algebra, Physics: Mechanics, Physics: Electromagnetism, Physics: Optics & Quantum Physics
                     </p>
@@ -185,7 +186,7 @@
             </div>
         <!--Footer-->
         <footer>
-            <p>Ryan Man 2023</p>
+            <p>© 2023 Ryan Man</p>
             <a href="https://github.com/Raiun">
                 <img src="images/github.ico" width="30px" height="30px"></a>
             <a href="https://www.linkedin.com/in/ryan-man/">

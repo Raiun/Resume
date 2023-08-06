@@ -61,34 +61,13 @@ header a:hover {
     min-height: calc(100vh - 150px);
 }
 
+#intro {
+    width: 85%; 
+    height: 66vh;
+}
+
 li {
     display: inline;
-}
-
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    padding: 0;
-    letter-spacing: .08em; /* Adjust as needed */
-    animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-    position: absolute;
-    background-image: url(images/me.jpg);
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 70% }
-}
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from , to { border-color:transparent}
-   50%{border-color:black}
 }
 
 .introLink {
@@ -102,6 +81,12 @@ li {
     color: white;
     border-radius: 5%;
     float: left;
+}
+
+.sectionTitle {
+    width: 85%; 
+    height: 50px; 
+    border-top: 1px solid lightgray;
 }
 
 .carouselGrid {
@@ -144,7 +129,7 @@ li {
     display: grid;
     column-gap: 30px;
     row-gap: 30px;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 42.5%);
     justify-content: center;
     font-family: Helvetica;
 }
