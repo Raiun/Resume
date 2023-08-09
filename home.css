@@ -78,7 +78,7 @@ header a:hover {
 
 #intro {
     width: 85%; 
-    height: 66vh;
+    height: clamp(66vh, 80vh, 100vh);
 }
 
 #intro li {
