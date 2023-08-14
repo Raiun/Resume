@@ -112,8 +112,8 @@ header a:hover {
     height: 320px;
     display: grid;
     row-gap: 30px;
-    column-gap: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     justify-content: center;
 }
 
@@ -128,7 +128,7 @@ header a:hover {
 }
 
 .carouselImg {
-    height: 170px;
+    height: 200px;
     width: 100%;
     text-align: center;
 }
