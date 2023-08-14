@@ -1,28 +1,7 @@
-//Function to open or close additional content in details
-function expand(type) {
-    if (type === "d1") {
-        const expandButton = document.getElementById("exd1").innerHTML; 
-        document.getElementById("exd1").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand";     
-    }
-    if (type === "d2") {
-        const expandButton = document.getElementById("exd2").innerHTML; 
-        document.getElementById("exd2").innerHTML = (expandButton === "Expand") ? "Collapse" : "Expand"; 
-    }
-    
-    const elements = document.getElementsByClassName(type);
-    
-    for (let i = 0; i < elements.length; i++) {
-        if(elements[i].hasAttribute("open")) {
-            elements[i].removeAttribute("open");
-        }
-        else {
-            elements[i].setAttribute("open", true);
-        }
-    }
-}
-
+// Function to toggle popup from cards
 function popup(card) {
     let popup = document.getElementsByClassName("popup")[0];
+    let info = document.getElementById("popupInfo");
     console.log(card)
     popup.classList.toggle("show");
     let overlay = document.getElementById("overlay"); 
@@ -30,8 +9,21 @@ function popup(card) {
 
     switch(card) {
         case "w1":
+            infoList = ["Helped lead development for system admin panel"
+            ,"Refactored backend scripts"
+            ,"Added new features for csv data processing into database"
+            ,"Created testing script"]
+
             title = popup.querySelector("p");
             title.innerHTML = "Pullscription: Software Engineering Intern"
+            
+            for (let i in infoList) {
+                console.log(i)
+                const listNode = document.createElement("li");
+                listNode.innerHTML = infoList[i];
+                info.appendChild(listNode);
+            }
+
             break;
         case "w2":
             title = popup.querySelector("p");
